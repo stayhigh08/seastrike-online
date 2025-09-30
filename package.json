@@ -1,0 +1,32 @@
+{
+  "name": "seastrike-multiplayer-game",
+  "version": "1.0.0",
+  "description": "An online multiplayer naval combat game based on Battleship, built with Node.js, Express, and WebSockets.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "battleship",
+    "game",
+    "websocket",
+    "nodejs",
+    "multiplayer"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "ws": "^8.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

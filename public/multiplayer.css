@@ -1,0 +1,91 @@
+#lobby-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* A bit wider for the list */
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: 10;
+    text-align: center;
+}
+
+#lobby-container h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    text-shadow: 0 0 25px rgba(147, 112, 219, 0.7);
+    margin-bottom: 2rem;
+}
+
+#lobby-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#player-name-input {
+    background-color: var(--card-black);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.75em;
+    border-radius: 12px;
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#lobby-list-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#lobby-list-container h2 {
+    margin-top: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    color: var(--primary-purple);
+    text-transform: uppercase;
+}
+
+#lobby-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.lobby-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--card-black);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.lobby-item span {
+    font-weight: bold;
+}
+
+#no-lobbies-message {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 2rem 0;
+}
+
+#waiting-message {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--go-color);
+}
+#waiting-message p { margin: 0; }
+#waiting-message strong { font-size: 1.5rem; }
